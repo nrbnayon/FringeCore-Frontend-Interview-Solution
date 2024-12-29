@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  border: 20px solid blueviolet;
+  border-image: url("./assets/bricks.png") 8% round;
+  overflow: hidden;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+#canvas {
+  height: calc(100vh - 40px);
+  width: calc(100vw - 40px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+#ball {
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  position: absolute;
+  box-shadow: inset 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
+  background-image: url("./assets/tennis-ball.webp");
+  background-size: 46px 46px;
+}
+
+#instructions {
+  position: absolute;
+  color: #00000058;
+  font-size: 24px;
+  text-align: center;
+  user-select: none;
+  line-height: 32px;
+}
